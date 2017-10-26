@@ -1,0 +1,701 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+@font-face {
+    font-family: "ARDECODE";
+    src: url(../fonts/ARDECODE.ttf);
+}
+
+header {
+    background-color: #2a2e33;
+    min-height: 100px;overflow: hidden;
+    
+}
+footer{
+    background-color: #333333;
+    min-height: 400px;
+    overflow: hidden;
+    width: 100%
+}
+
+#banner {
+    background-color: #00ccff;
+    min-height: 460px;
+    overflow: hidden;
+}
+
+#select_room_type {
+   
+    
+}
+
+#pakage_booking {
+    background: url(../img/room-book.jpg);
+    min-height: 520px;
+    border-bottom: 2px solid #e7e8e8;
+    overflow: hidden;
+}
+
+#room_type {
+     background: url(../img/room-type.jpg);
+    min-height:950px;
+    overflow: hidden;
+    background-size: cover;
+
+}
+
+#testimonial {
+    background-color: #e7cb2c;
+    min-height: 200px;
+    position: relative;
+    width: 100%;
+   top:24px;
+}
+
+.logo {
+    width: 404px;
+    height: 26px;
+    margin-left: 155px;
+    padding-top: 32px;
+    float: left;
+    
+}
+
+.subtext-logo {
+    font-family: Quicksand;
+    font-size: 14pt;
+    color: #797b7d;
+    
+}
+
+.menubar {
+    width: 786px;
+    float: right;
+    margin-right: 120px;
+    
+}
+.menubar ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.menubar ul li{float: left;
+}
+.menubar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Droid sans;
+    font-size: 13pt;
+    padding: 38px 18px;
+    display: block;
+}
+.menubar ul li a:hover{
+    background-color: #1e2329;
+    padding: 36px 18px;
+    border-top: 4px solid #ffd700;
+}
+
+.banner_caption {
+    width: 740px;
+    height: 245px;
+    margin:0 auto;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+}
+
+.welcome_txt {
+    font-family: Quicksand;
+    font-weight: normal;
+    font-size: 30pt;
+    color: white;
+}
+
+.caption_titel {
+    font-family: Droid sans;
+    font-weight: bold;
+    font-size: 60pt;
+    color: white;
+    
+}
+
+.facalitis {font-family: Quicksand;
+    font-weight: normal;
+    font-size: 30pt;
+    color: white;}
+
+.view_pricing {
+        background-color: #2a2e33;
+    width: 1019px;
+    height: 102px;
+    text-align: center;
+    position: absolute;
+    top:54%;
+    left:23%;
+}
+
+.from-group {
+    float: left;
+    margin: 0 10px auto;}
+.from-group label{font-family: Quicksand;
+font-weight: 400;
+color: #c0bd0b;
+font-size: 18pt;}
+
+.common_date_style {
+    width: 255px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: url(../img/calender_icon.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: 5%;
+     
+    
+}
+.common_date_style_A {width: 255px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../img/down_buton.png)
+  no-repeat;
+    background-position: 5%;
+    padding-left: 11%;
+    background-color: white;
+    
+}
+
+
+
+
+.view_price_btn {
+    width: 175px;
+    height: 45px;
+    background-color: #ffd700;
+    font-weight: bold;
+    font-size: 18pt;
+    border: none;
+    border-radius: 10px;
+    margin-top: 32px;
+    
+}
+
+.pakage_booking_title {
+    width: 1160px;
+    height: 107px;
+    text-align: center;
+    margin: 95px auto;
+    
+    
+    
+}
+.pakage_booking_title h1{font-family: ARDECODE;
+font-size: 60pt;
+color: #2a2e33;
+margin: 0px;}
+.pakage_booking_title p{font-family: Quicksand;font-size: 14pt;
+color:#2a2e33;}
+.pakage_slider {
+    width: 1035px;
+    height: 230px;
+    margin: 0 auto;
+}
+
+.left-indicator {float: left;
+margin-top: 7%;}
+
+.single-item {
+    float: left;
+    width: 225px;
+    height: 215px;
+    background-color: white;
+    border: 3px solid #2a2e33;
+    border-radius: 130px;
+    margin-left: 6%;
+    margin-top: -1%
+    
+}
+
+.right-indicator {float: right;
+margin-top: 7%;}
+
+.room_types_titel {
+    width: 455px;
+    height: 75px;
+    font-family: ARDECORD;
+    margin: 0 auto;
+}
+.room_types_titel h1{
+    margin: 0px;
+    font-family:ARDECODE;
+    font-size: 60pt;
+    color: #2a2e33;
+    padding-top: 35px;
+    
+}
+
+.all_room_types {
+    width: 1300px;
+    height: 580px;
+    margin: 80px auto;
+    
+}
+
+.single_type {
+    width: 380px;
+    height: 350px;
+    float: left;
+    text-align: center;
+    margin-left: 3%;
+    
+}
+
+.room_img {}
+
+.room_type_data {}
+.room_type_data h1{
+  font-family: Quicksand;
+    font-weight: normal;
+    font-size: 24pt;
+    margin: 0px;
+    
+}
+.room_type_data p{font-family: Quicksand;
+    font-weight: normal;
+    font-size: 14pt;
+    margin: 0px;}
+
+.short_intro {}
+
+.room_facility {
+    margin-top: 15px;
+}
+
+.testimonial_data {
+    width: 875px;
+    height: 95px;
+    
+    padding-left: 20%;
+    font-family: Quicksand;
+    text-align: center;
+    
+    
+}
+.testimonial_data h1{color: white;
+font-weight: 400;
+font-size: 36pt;
+margin: 0px;}
+
+.comments {color: white;
+font-weight: normal;
+font-weight: 18pt;}
+
+.author {color: white;
+font-weight: normal;
+font-weight: 18pt;}
+
+.person-image {
+    position: absolute;
+    right: 7%;
+    bottom: -4%;
+}
+footer_wapper{width: 1170px;
+height: 188px;
+margin: 0 auto;
+}
+.about_hotel {
+    width: 250px;
+    height: 206px;
+    float: left;
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about_hotel h1,.latest_news h1,.join_delux h1,.member_area h1{
+    font-family: droid sand;
+    font-size: 18pt;
+    color: #dbdbdb;
+}
+.about_hotel p,.latest_news p,.join_delux p,.member_area p{
+    
+    font-family: droid sand;
+    font-size: 12pt;
+    color: #dbdbdb;
+}
+.footer_description {
+    font-family: QUicksand;
+    font-size: 14pt;
+    color: #dbdbdb;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.latest_news {width: 200px;
+height: 200px;
+float: left;
+padding: 48px;}
+
+.single_news {}
+
+.date {}
+
+.join_delux {
+    width:460px;
+    height:200px;
+    float: left;    
+    padding: 50px;
+    
+    
+}
+
+.read_more {
+    width: 155px;
+    height: 38px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e7cb2c;
+    font-family: 14pt;
+    color: #36321f;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.member_area {
+    width: 210px;
+    height: 200px;
+    float: left;
+    padding: 50px 50px 50px 100px;
+}
+
+.member-from-group {}
+.member-from-group lable{font-family: Quicksand;
+    font-size: 12pt;
+    font-weight: normal;
+    color: #dbdbdb;}
+
+.username {
+    background-color: transparent;
+    border:2px solid #2c2c2c;
+    border-radius: 10px;
+    width: 202px;
+    height: 32px;
+    
+}
+
+.Password {background-color: transparent;
+    border:2px solid #2c2c2c;
+    border-radius: 10px;
+    width: 202px;
+    height: 32px;}
+.footer_bottom{
+    height: 35px;
+    background-color: #221F1A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
